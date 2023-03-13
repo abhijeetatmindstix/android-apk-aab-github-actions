@@ -107,8 +107,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v2
         with:
-          name: demo-app-debug.apk
-          path: app/build/outputs/apk/debug/demo-app-debug.apk      
+          name: expense-manager.apk
+          path: app/build/outputs/apk/debug/app-debug.apk      
 
   cleanup:
     needs: upload-apk
