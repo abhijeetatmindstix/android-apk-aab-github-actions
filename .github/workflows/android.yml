@@ -94,7 +94,7 @@ jobs:
     needs: build
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.1.4
       - name: Build APK
         run: |
           chmod +x gradlew
@@ -105,9 +105,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Upload APK artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2.1.4
         with:
-          name: expense-manager.apk
+          node-version: '16'
+          name: app-debug.apk
           path: ./app/build/outputs/apk/debug/app-debug.apk      
 
   cleanup:
