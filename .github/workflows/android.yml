@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "AIUPPG1-poc" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "AIUPPG1-poc" ]
+    branches: [ "main" ]
 
 jobs:
   build:
